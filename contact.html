@@ -12,44 +12,42 @@
                     <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
             <style>
-    /* Custom styles for the footer (optional) */
     .footer {
-      background-color: #f8f9fa; /* Light background for the footer */
+      background-color: #f8f9fa; 
       padding: 40px 0;
-      border-top: 1px solid #e9ecef; /* Light border at the top */
+      border-top: 1px solid #e9ecef; 
     }
     .footer-heading {
       font-weight: bold;
       margin-bottom: 15px;
-      color: #343a40; /* Darker heading color */
+      color: #343a40; 
     }
     .footer-link {
-      color: #6c757d; /* Muted link color */
+      color: #6c757d; 
       text-decoration: none;
       transition: color 0.3s ease;
     }
     .footer-link:hover {
-      color: #007bff; /* Blue on hover for links */
+      color: #007bff; 
     }
     .social-icon {
       font-size: 24px;
       margin-right: 15px;
-      color: #6c757d; /* Muted social icon color */
-      /* transition: color 0.3s ease; */
+      color: #6c757d; 
     }
     .social-icon:hover {
-      color: #007bff; /* Blue on hover for social icons */
+      color: #007bff; 
     }
     body {
-      font-family: 'Inter', sans-serif; /* Using Inter font */
-      background-color: #f8f9fa; /* Light background */
+      font-family: 'Inter', sans-serif; 
+      background-color: #f8f9fa; 
     }
     .contact-header {
       background-color: #ffffff;
       padding: 50px 0;
       border-bottom: 1px solid #e9ecef;
       text-align: center;
-      border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+      border-radius: 0 0 15px 15px; 
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
     .contact-section {
@@ -61,7 +59,7 @@
       border-radius: 15px;
       padding: 30px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      height: 100%; /* Ensure cards are same height */
+      height: 100%; 
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -70,7 +68,7 @@
     }
     .info-card i {
       font-size: 40px;
-      color: #28a745; /* Green color for icons */
+      color: #28a745; 
       margin-bottom: 15px;
     }
     .info-card h4 {
@@ -113,14 +111,14 @@
       transition: background-color 0.3s ease, border-color 0.3s ease;
     }
     .btn-primary:hover {
-      background-color: #218838; /* Darker green on hover */
+      background-color: #218838; 
       border-color: #1e7e34;
     }
     .map-container {
       border-radius: 15px;
-      overflow: hidden; /* Ensures map corners are rounded */
+      overflow: hidden; 
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      height: 600px; /* Fixed height for the map */
+      height: 600px; 
       width: 100%;
     }
     .map-container iframe {
@@ -141,16 +139,16 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      z-index: 1050; /* Above most elements */
+      z-index: 1050; 
     }
     .toast {
-      background-color: #28a745; /* Green background for success toast */
+      background-color: #28a745;
       color: white;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     .toast .btn-close {
-      filter: invert(1); /* Make close button white */
+      filter: invert(1); 
     }
     .navhover:hover{
           background-color: #218838;
@@ -337,14 +335,14 @@
     </div>
   </section>
 
-  <!-- Bootstrap JS -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Simple form submission handler
+    
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent actual form submission
+      event.preventDefault();
 
-      // Get form values (for demonstration purposes)
+      
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const subject = document.getElementById('subject').value;
@@ -352,7 +350,7 @@
 
       console.log('Form Submitted:', { name, email, subject, message });
 
-      // Show a success message using Bootstrap Toast
+      
       const toastHtml = `
         <div class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="d-flex">
@@ -373,12 +371,12 @@
       const toast = new bootstrap.Toast(toastElement);
       toast.show();
 
-      // Remove the toast element after it's hidden to clean up DOM
+      
       toastElement.addEventListener('hidden.bs.toast', function () {
         toastContainer.remove();
       });
 
-      // Optionally clear the form
+      
       this.reset();
     });
   </script>
