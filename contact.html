@@ -120,7 +120,7 @@
       border-radius: 15px;
       overflow: hidden; /* Ensures map corners are rounded */
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      height: 400px; /* Fixed height for the map */
+      height: 600px; /* Fixed height for the map */
       width: 100%;
     }
     .map-container iframe {
@@ -163,7 +163,7 @@
     <header>
             <nav class="navbar navhover navbar-expand-lg bg-dark" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <img src="images/Logo.jpg" alt="Logo" width="50" height="45"
+                    <img src="images/logo2.png" alt="Logo" width="50" height="45"
                         class="d-inline-block align-text-top"> &nbsp;
                     <a class="navbar-brand" href="#">GroceryMart</a>
                     <button class="navbar-toggler" type="button"
@@ -195,7 +195,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
 
-                                    href="contact.html">contact</a>
+                                    href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
@@ -258,7 +258,7 @@
           <div class="info-card">
             <i class="fas fa-map-marker-alt"></i>
             <h4>Our Location</h4>
-            <p>123 Fresh Produce Avenue,<br>Chhatrapati Sambhajinagar, Maharashtra, India</p>
+            <p>123 Grocery Lane,<br>Pimpri-Chichwad, Maharashtra, India</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -292,7 +292,7 @@
             <form id="contactForm">
               <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" required>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Your Email</label>
@@ -317,12 +317,7 @@
         <div class="col-lg-6">
           <h3 class="mb-4 text-center text-success">Find Us on the Map</h3>
           <div class="map-container">
-            <!-- Replace 'YOUR_GOOGLE_MAPS_EMBED_URL' with an actual embed URL from Google Maps -->
-            <!-- Go to Google Maps, search for a location, click 'Share', then 'Embed a map' -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000.000000000002!2d75.34331000000001!3d19.876200000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd9045b882319ef%3A0x62953240f95c464c!2sChhatrapati%20Sambhajinagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241953.314225571!2d73.62733231654512!3d18.640623358266257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8377fbdeab3%3A0x2c4265dab1a7a0f8!2sPimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1752225661905!5m2!1sen!2sin" width="600" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -387,120 +382,6 @@
       this.reset();
     });
   </script>
-
-    <!-- <section class="mb-5 ">
-            <div class="container  ">
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <h2>Contact Us</h2>
-                        <div class="row border border border-primary p-4">
-                            <div class="col-md-6 ">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label">Enter Name</label>
-                                    <input type="text" class="form-control"
-                                        id="exampleFormControlInput1"
-                                        placeholder="Enter Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label">Phone Number</label>
-                                    <input type="number" class="form-control"
-                                        id="exampleFormControlInput1"
-                                        placeholder="Phone Number">
-                                </div>
-                                <div class="mb-3">
-                                    <label>Select City</label>
-                                    <select class="form-select"
-                                        aria-label="Default select example">
-                                        <option selected>Select City</option>
-                                        <option value="1">Pune</option>
-                                        <option value="2">nashik</option>
-                                        <option value="3">Mumbai</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label">Zip Code</label>
-                                    <input type="number" class="form-control"
-                                        id="exampleFormControlInput1"
-                                        placeholder="code">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label">Enter email</label>
-                                    <input type="email" class="form-control"
-                                        id="exampleFormControlInput1"
-                                        placeholder="Enter email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label">alernate
-                                        Number</label>
-                                    <input type="number" class="form-control"
-                                        id="exampleFormControlInput1"
-                                        placeholder="alernate Number">
-                                </div>
-                                <div class="mb-3">
-                                    <label>Select Country</label>
-                                    <select class="form-select"
-                                        aria-label="Default select example">
-                                        <option selected>Select Country
-                                        </option>
-                                        <option value="1">India</option>
-                                        <option value="2">Canada</option>
-                                        <option value="3">Germany</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label>Select Gender</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input"
-                                            type="radio" name="radioDefault"
-                                            id="radioDefault1">
-                                        <label class="form-check-label"
-                                            for="radioDefault1">
-                                            Female
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input"
-                                            type="radio" name="radioDefault"
-                                            id="radioDefault2" checked>
-                                        <label class="form-check-label"
-                                            for="radioDefault2">
-                                            Male
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label">Address</label>
-                                <textarea class="form-control"
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                <button type="submit"
-                                class="btn btn-success">submit</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Reach Us</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30246.88614321975!2d73.8033664!3d18.625331199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9bc937856ef%3A0x269368b0b566e1cd!2sBhosari%20Metro%20Station(Nashik%20Phata)!5e0!3m2!1sen!2sin!4v1751873805681!5m2!1sen!2sin"
-                    width="600" height="560" style="border:0;"
-                    allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-                </div>
-            </div>
-            
-        </section> -->
         <footer class="footer mt-5">
             <div class="container">
                 <div class="row">
@@ -529,7 +410,7 @@
                                 <i
                                     class="fas fa-map-marker-alt me-2 text-muted"></i>
                                 <span class="text-muted">123 Grocery Lane,
-                                    Chhatrapati Sambhajinagar, Maharashtra,
+                                    Pimpri-Chichwad, Maharashtra,
                                     India</span>
                             </li>
                             <li class="mb-2">
