@@ -159,7 +159,7 @@
         .card:nth-child(3) {
             animation-delay: 13.5s;
         }
-        
+
 
         @keyframes slide-and-fade-in {
             0% {
@@ -177,6 +177,16 @@
         .card {
             background: rgb(186, 223, 244);
 
+        }
+
+        .container4 {
+            background: rgba(250, 250, 252, 0.829);
+            border-radius: 8px;
+            position: relative;
+            top: 100px;
+            opacity: 0;
+            animation: 1.5s ease 0s slide-and-fade-in;
+            animation-fill-mode: forwards;
         }
     </style>
 </head>
@@ -212,6 +222,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="cart.html">carts</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
@@ -252,7 +265,11 @@
 
     <section>
         <main>
+            <hr class="bg-primary w-100 mt-4">
+
             <h1 class="text-primary text-center m-2 p-4 text-decoration"><strong>Vegetables</strong></h1>
+            <hr class="bg-primary w-100 mt-4">
+
             <div class="container1">
                 <div class="row row-cols-1 row-cols-md-3 ">
                     <div class="col-md-2">
@@ -263,10 +280,19 @@
                                 <h5 class="card-title"><strong>Tomato</strong></h5>
                                 <h6><i class="bi bi-currency-rupee"></i><strong>100</strong>per 1kg</h6>
 
+
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><button type="button"
-                                        class="btn btn-outline-primary">BUY</button>
+                                <small class="text-body-secondary">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">500g</a></li>
+                                        <li><a class="dropdown-item" href="#">250g</a></li>
+                                    </ul>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"><a
+                                            href="cart.html" class="card-link"></a>Add cart</button>
                                 </small>
                             </div>
                         </div>
@@ -280,8 +306,17 @@
 
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><button type="button"
-                                        class="btn btn-outline-primary">BUY</button>
+                                <small class="text-body-secondary">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">500g</a></li>
+                                        <li><a class="dropdown-item" href="#">250g</a></li>
+                                    </ul>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"><a
+                                            href="cart.html" class="card-link"></a>Add cart</button>
+
                                 </small>
                             </div>
                         </div>
@@ -291,12 +326,21 @@
                             <img src="images/capsicum.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>capsicum</strong></h5>
-                                <h6><i class="bi bi-currency-rupee"></i><strong>150</strong>per 1kg</h6>
+                                <h6><i class="bi bi-currency-rupee"></i><strong>200</strong>per 1kg</h6>
 
                             </div>
                             <div class="card-footer">
                                 <small class="text-body-secondary"><button type="button"
-                                        class="btn btn-outline-primary">BUY</button>
+                                        class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                        aria-expanded="false" role="button">BUY</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">500g</a></li>
+                                        <li><a class="dropdown-item" href="#">250g</a></li>
+                                    </ul>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"><a
+                                            href="cart.html" class="card-link"></a>Add cart</button>
+
                                 </small>
                             </div>
                         </div>
@@ -312,8 +356,17 @@
 
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"> <button type="button"
-                                        class="btn btn-outline-primary">BUY</button>
+                                <small class="text-body-secondary">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">500g</a></li>
+                                        <li><a class="dropdown-item" href="#">250g</a></li>
+                                    </ul>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"><a
+                                            href="cart.html" class="card-link"></a>Add cart</button>
+
                                 </small></small>
                             </div>
                         </div>
@@ -328,8 +381,17 @@
 
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><button type="button"
-                                        class="btn btn-outline-primary">BUY</button>
+                                <small class="text-body-secondary">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">500g</a></li>
+                                        <li><a class="dropdown-item" href="#">250g</a></li>
+                                    </ul>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"> <a
+                                            href="cart.html" class="card-link"></a>Add cart</button>
+
                                 </small></small>
                             </div>
                         </div>
@@ -344,8 +406,17 @@
 
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><button type="button"
-                                        class="btn btn-outline-primary">BUY</button>
+                                <small class="text-body-secondary">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">500g</a></li>
+                                        <li><a class="dropdown-item" href="#">250g</a></li>
+                                    </ul>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"><a
+                                            href="cart.html" class="card-link"></a>Add cart</button>
+
                                 </small>
                             </div>
                         </div>
@@ -353,8 +424,11 @@
                     </div>
                 </div>
 
+                <hr class="bg-primary w-100 mt-4">
 
                 <h1 class="text-center text-primary p-4 m-2 text-decoration"><strong>fruits</strong></h1>
+                <hr class="bg-primary w-100 mt-4">
+
                 <div class="conitaner2">
                     <div class="row row-cols-1 row-cols-md-3 ">
                         <div class="col-md-2">
@@ -367,8 +441,18 @@
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -382,8 +466,18 @@
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -397,8 +491,18 @@
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -413,8 +517,18 @@
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -429,8 +543,18 @@
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -445,8 +569,18 @@
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">2</a></li>
+                                            <li><a class="dropdown-item" href="#">3</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -454,20 +588,34 @@
 
                     </div>
                 </div>
-                <h1 class="text-center text-primary text-decoration p-4 m-2"><strong>Dry-fruits</strong></h1>
-                <div class="container3">
+                <hr class="bg-primary w-100 mt-4">
+
+                <h1 class="text-center text-primary p-4 m-2 text-decoration"><strong>Dry-fruits</strong></h1>
+                <hr class="bg-primary w-100 mt-4">
+
+                <div class="conitaner2">
                     <div class="row row-cols-1 row-cols-md-3 ">
                         <div class="col-md-2">
                             <div class="card h-100 p-3">
                                 <img src="images/almond.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Almonds</strong></h5>
-                                    <h6><i class="bi bi-currency-rupee"></i><strong>500</strong>per 1kg</h6>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>600</strong>per 1kg</h6>
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -477,12 +625,22 @@
                                 <img src="images/cashews.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Cashews</strong></h5>
-                                    <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per 1kg</h6>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>500</strong>per 1kg</h6>
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -492,12 +650,22 @@
                                 <img src="images/dates.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Dates</strong></h5>
-                                    <h6><i class="bi bi-currency-rupee"></i><strong>600</strong>per 1kg</h6>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>150</strong>per 1kg</h6>
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -507,12 +675,22 @@
                                 <img src="images/prunes.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Prunes</strong></h5>
-                                    <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per 1kg</h6>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>400</strong>per 1kg</h6>
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -522,12 +700,22 @@
                                 <img src="images/walnetes.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Walnetes</strong></h5>
-                                    <h6><i class="bi bi-currency-rupee"></i><strong>500</strong>per 1kg</h6>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>400</strong>per 1kg</h6>
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
                                     </small>
                                 </div>
                             </div>
@@ -538,18 +726,289 @@
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Pistachios</strong></h5>
-                                    <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per 1kg</h6>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>700</strong>per piese</h6>
 
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-body-secondary"><button type="button"
-                                            class="btn btn-outline-primary">BUY</button>
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">500g</a></li>
+                                            <li><a class="dropdown-item" href="#">250g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="bg-primary w-100 mt-4">
+
+                <h1 class="text-center text-primary text-decoration p-4 m-2"><strong>Cosmetics</strong></h1>
+                <hr class="bg-primary w-100 mt-4">
+
+                <div class="container3">
+                    <div class="row row-cols-1 row-cols-md-3 ">
+                        <div class="col-md-2">
+                            <div class="card h-100 p-3">
+                                <img src="images/sunscreem.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Sunscreem</strong></h5>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>500</strong>per pkg</h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">50g</a></li>
+                                            <li><a class="dropdown-item" href="#">100g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card h-100 p-3">
+                                <img src="images/nail paints.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Lipstics</strong></h5>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>200</strong>per pkg</h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">50g</a></li>
+                                            <li><a class="dropdown-item" href="#">100g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card h-100 p-3">
+                                <img src="images/foundation.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>foundation</strong></h5>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>1000</strong>per pkg</h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">50g</a></li>
+                                            <li><a class="dropdown-item" href="#">100g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card h-100 p-3">
+                                <img src="images/perfumes.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Perfumes</strong></h5>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>2000</strong>per pkg</h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">50g</a></li>
+                                            <li><a class="dropdown-item" href="#">100g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card h-100 p-3">
+                                <img src="images/moishchurizer.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Moishchurizer</strong></h5>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>500</strong>per pkg</h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">50g</a></li>
+                                            <li><a class="dropdown-item" href="#">100g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"
+                                            onclick="massage()"><a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card h-100 p-3">
+                                <img src="images/WhatsApp Image 2025-07-18 at 23.59.00_215720ad.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Facewash</strong></h5>
+                                    <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per pkg</h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false" role="button">BUY</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">50g</a></li>
+                                            <li><a class="dropdown-item" href="#">100g</a></li>
+                                        </ul>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary ml-5" onclick="massage()"></button>
+                                            <a href="cart.html" class="card-link"></a>Add
+                                            cart</button>
+
+
                                     </small>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <hr class="bg-primary w-100 mt-4">
+                    <div class="container4">
+                        <div class="row row-cols-1 row-cols-md-3 ">
+                            <div class="col-md-3">
+                                <div class="card h-100 p-3">
+                                    <img src="images/milk products.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Milk Products</strong></h5>
+                                        <!-- <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per pkg</h6> -->
+
+                                    </div>
+                                    <!-- <div class="card-footer">
+                                    <small class="text-body-secondary"><button type="button"
+                                            class="btn btn-outline-primary">BUY</button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"><a href="cart.html"
+                                                class="card-link"></a>Add to cart</button>
+
+                                    </small>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100 p-3">
+                                    <img src="images/chocos.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Chocholates</strong></h5>
+                                        <!-- <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per pkg</h6> -->
+
+                                    </div>
+                                    <!-- <div class="card-footer">
+                                    <small class="text-body-secondary"><button type="button"
+                                            class="btn btn-outline-primary">BUY</button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"><a href="cart.html"
+                                                class="card-link"></a>Add to cart</button>
+
+                                    </small>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100 p-3">
+                                    <img src="images/deterjunt.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Deterjunts</strong></h5>
+                                        <!-- <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per pkg</h6> -->
+
+                                    </div>
+                                    <!-- <div class="card-footer">
+                                    <small class="text-body-secondary"><button type="button"
+                                            class="btn btn-outline-primary">BUY</button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"><a href="cart.html"
+                                                class="card-link"></a>Add to cart</button>
+
+                                    </small>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100 p-3">
+                                    <img src="images/snacks.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>Snacks</strong></h5>
+                                        <!-- <h6><i class="bi bi-currency-rupee"></i><strong>800</strong>per pkg</h6> -->
+
+                                    </div>
+                              
+                                <!-- <div class="card-footer">
+                                    <small class="text-body-secondary"><button type="button"
+                                            class="btn btn-outline-primary">BUY</button>
+                                        <button type="button" class="btn btn-outline-primary ml-5"><a href="cart.html"
+                                                class="card-link"></a>Add to cart</button>
+
+                                    </small>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <hr class="bg-primary w-100 mt-4">
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide m-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slide.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide3.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/silde4.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-primary w-100 mt-4">
+
                 <footer class="footer mt-5">
                     <div class="container">
                         <div class="row">
@@ -620,6 +1079,12 @@
                         </div>
                     </div>
                 </footer>
+                <script>
+                    function massage() {
+                        alert("Your item Added to cart successfully.. ");
+                    }
+
+                </script>
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
