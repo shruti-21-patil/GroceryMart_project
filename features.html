@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+            <style>
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+      border-top: 1px solid #e9ecef;
+    }
+    .footer-heading {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #343a40;
+    }
+    .footer-link {
+      color: #6c757d;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-link:hover {
+      color: #007bff;
+    }
+    .social-icon {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #6c757d;
+
+    }
+    .social-icon:hover {
+      color: #007bff;
+    }
+
+
+   /* Feature Cards */
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6 !important; /* Lighter border */
+    border-radius: 0.5rem !important; /* Slightly rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; /* Subtle shadow */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lifts the card slightly */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important; /* Keep a standard shadow for depth */
+
+    /* Change the border color to dark blue */
+    border-color: #004085 !important; /* A common dark blue. Adjust if your specific blue is different. */
+    /* If your search bar also gets a very subtle background tint on hover/focus, uncomment below */
+    /* background-color: #f8f9fa; */ /* Very light grey */
+}
+
+/* ... (rest of your features.css) ... */
+
+
+.features-hero p.lead {
+    /* Keep existing color and font-size */
+    /* color: #6c757d; /* This line should already be there */
+    /* font-size: 1.3rem; */ /* This line should already be there */
+
+    font-weight: 500; /* Making it thicker: 400 is 'normal', 500 is 'medium', 600 is 'semi-bold' */
+    /* If 500 is not thick enough, you can try 600 */
+    /* font-weight: 600; */
+}
+    </style>
+
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <img src="images/logo2.png" alt="Logo" width="50" height="45"
+                        class="d-inline-block align-text-top"> &nbsp;
+                    <a class="navbar-brand" href="#">GroceryMart</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                        href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                        href="order.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                        href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                        href="AboutUs.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                        href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                        href="features.html">Features</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active"
+                                        href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="#">Login</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">Logout</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active"
+                                        href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Reviews
+                                </a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="#">Photos</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="#">Video</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search"
+                                placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success"
+                                type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+      <main>
+        <section class="features-hero bg-light py-5 text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">Discover Our Key Features</h1>
+                <p class="lead text-muted">At GroceryMart, we're constantly working to enhance your shopping experience with convenience, quality, and value.</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-cart-fill display-4 text-success mb-3"></i>
+                            <h3 class="fw-bold mb-2">Extensive Product Range</h3>
+                            <p class="text-muted">Explore thousands of products, from daily essentials and fresh produce to gourmet items and organic selections, all in one place.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-patch-check-fill display-4 text-primary mb-3"></i>
+                            <h3 class="fw-bold mb-2">Guaranteed Freshness & Quality</h3>
+                            <p class="text-muted">We partner directly with local farmers and trusted suppliers to ensure every item meets our rigorous quality and freshness standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-truck display-4 text-info mb-3"></i>
+                            <h3 class="fw-bold mb-2">Fast & Reliable Home Delivery</h3>
+                            <p class="text-muted">Enjoy the convenience of having your groceries delivered directly to your doorstep at your preferred time slot, safely and efficiently.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-search display-4 text-warning mb-3"></i>
+                            <h3 class="fw-bold mb-2">Intuitive Website & App</h3>
+                            <p class="text-muted">Our user-friendly platform makes finding products, creating lists, and placing orders a breeze, saving you time and effort.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-credit-card-fill display-4 text-danger mb-3"></i>
+                            <h3 class="fw-bold mb-2">Secure & Multiple Payment Options</h3>
+                            <p class="text-muted">Pay with confidence using a variety of secure payment methods, including credit/debit cards, net banking, and popular digital wallets.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-headset display-4 text-secondary mb-3"></i>
+                            <h3 class="fw-bold mb-2">Dedicated Customer Support</h3>
+                            <p class="text-muted">Our friendly and knowledgeable customer service team is always ready to assist you with any queries or concerns.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-percent display-4 text-success mb-3"></i>
+                            <h3 class="fw-bold mb-2">Exciting Deals & Savings</h3>
+                            <p class="text-muted">Benefit from our regular discounts, special bundles, and loyalty programs to get more value for your money on every purchase.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-recycle display-4 text-primary mb-3"></i>
+                            <h3 class="fw-bold mb-2">Sustainable & Eco-Conscious</h3>
+                            <p class="text-muted">We are committed to reducing our environmental footprint through sustainable sourcing, packaging, and delivery practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card p-4 border rounded shadow-sm text-center h-100">
+                            <i class="bi bi-stars display-4 text-info mb-3"></i>
+                            <h3 class="fw-bold mb-2">Personalized Shopping Experience</h3>
+                            <p class="text-muted">Get tailored product recommendations based on your past purchases and preferences, making your shopping even smarter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-features py-5 text-center bg-success text-white">
+            <div class="container">
+                <h2 class="fw-bold mb-3">Ready to Experience These Features?</h2>
+                <p class="lead mb-4">Start your convenient and quality grocery shopping journey with us today!</p>
+                <a href="order.html" class="btn btn-light btn-lg rounded-pill shadow">Shop Now</a>
+            </div>
+        </section>
+    </main>
+
+
+        <footer class="footer mt-3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4 mb-4">
+                        <h5 class="footer-heading">Grocery Mart</h5>
+                        <p class="text-muted">Your one-stop shop for fresh
+                            groceries and daily essentials. Quality and
+                            convenience delivered to your doorstep.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer-link">About
+                                    Us</a></li>
+                            <li><a href="#" class="footer-link">Our
+                                    Products</a></li>
+                            <li><a href="#" class="footer-link">Privacy
+                                    Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of
+                                    Service</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <h5 class="footer-heading">Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i
+                                        class="fas fa-map-marker-alt me-2 text-muted"></i>
+                                <span class="text-muted">123 Grocery Lane,
+                                        Pimpri-Chinchwad, Maharashtra,
+                                        India</span>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-phone me-2 text-muted"></i>
+                                <a href="tel:+911234567890"
+                                        class="footer-link">+91 12345 67890</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-envelope me-2 text-muted"></i>
+                                <a href="mailto:info@grocerymart.com"
+                                        class="footer-link">info@grocerymart.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <h5 class="footer-heading">Follow Us</h5>
+                        <div>
+                            <a href="https://www.facebook.com"
+                                target="_blank" class=" facebbok social-icon"><i
+                                        class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com"
+                                target="_blank" class="instagram social-icon"><i
+                                        class="bi bi-instagram"></i></a>
+                            <a href="https://x.com/i/flow/login" target="_blank"
+                                class="social-icon"><i
+                                        class="bi bi-twitter"></i></a>
+                            <a href="https://in.linkedin.com" target="_blank"
+                                class="social-icon"><i
+                                        class="bi bi-linkedin"></i></a>
+                        </div>
+                        <p class="mt-3 text-muted">Stay connected for fresh
+                            updates and offers!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 text-center text-muted">
+                        &copy; <span id="currentYear"></span> Grocery Mart. All
+                        Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+</html>
